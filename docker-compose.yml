@@ -1,0 +1,10 @@
+version: "3"
+services:
+  goapp:
+    image: gouml-playground:${REVISION}
+    ports:
+      - "8080:8080"
+  plantuml:
+    image: plantuml/plantuml-server
+    ports:
+      - "5000:8080"
